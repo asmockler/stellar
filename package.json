@@ -6,7 +6,7 @@
   "author": "Andy Mockler <asmockler@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack && node dist/bundle.js",
+    "start": "nodemon ./src/index.js --exec babel-node --presets latest",
     "tunnel": "node_modules/.bin/lt --port 8080 --subdomain stellarbot"
   },
   "dependencies": {
@@ -20,7 +20,7 @@
     "babel-preset-latest": "^6.16.0",
     "json-loader": "^0.5.4",
     "localtunnel": "^1.8.1",
-    "webpack": "^1.13.3"
+    "nodemon": "^1.11.0"
   },
   "babel": {
     "presets": [
